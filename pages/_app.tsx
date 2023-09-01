@@ -1,8 +1,13 @@
 import type { AppProps } from "next/app";
 import {
   ThirdwebProvider,
-  paperWallet,
+  ConnectWallet,
+  metamaskWallet,
+  coinbaseWallet,
+  walletConnect,
   smartWallet,
+  localWallet,
+  paperWallet,
 } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import Navbar from "../components/navbar";
@@ -16,22 +21,30 @@ const activeChain = "polygon";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider
-      clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
-      activeChain={activeChain}
-      supportedWallets={[
+        activeChain="polygon"
+        clientId="690261969c7023f7bfee4aae4dba4425"
+        supportedWallets={[
+        metamaskWallet(),
+        coinbaseWallet(),
+        walletConnect(),
         smartWallet({
-          factoryAddress: "0x10d901d313856913aC1cEA225BD5231012569473",
-          gasless: true,
-          personalWallets: [
-            paperWallet({
-              paperClientId: process.env.NEXT_PUBLIC_PAPER_CLIENT_ID || "", // Get your paper client id from https://withpaper.com/sign-in
-            }),
+           factoryAddress: "0x10d901d313856913aC1cEA225BD5231012569473",
+           gasless: true,
+             personalWallets: [
+             metamaskWallet(),
+             coinbaseWallet(),
+             walletConnect(),
           ],
+        }),
+            localWallet(),
+            paperWallet({
+           paperClientId: "5c6a293d-21bd-4c8b-bc08-f722ea5168a6",
         }),
       ]}
     >
       <Header />
       <Component {...pageProps} />
+       <ConnectWallet theme={"dark"} />
       <Navbar />
     </ThirdwebProvider>
   );
