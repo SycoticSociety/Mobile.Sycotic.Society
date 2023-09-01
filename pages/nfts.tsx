@@ -17,7 +17,7 @@ export default function NFTs() {
 
     return (
         <div className={styles.container}>
-            <h1>NFTs</h1>
+            <h1>NFT Collection</h1>
             {ownedNFTsLoading ? (
                 <p>Loading...</p>
             ) : (
