@@ -11,7 +11,7 @@ import Header from "../components/header";
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
 // You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
-const activeChain = "mumbai";
+const activeChain = "polygon";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       activeChain={activeChain}
       supportedWallets={[
         smartWallet({
-          factoryAddress: "0x9838b534cd5950CB6ea9E7fa94c00CF3986F953B",
+          factoryAddress: "0x10d901d313856913aC1cEA225BD5231012569473",
           gasless: true,
           personalWallets: [
             paperWallet({
