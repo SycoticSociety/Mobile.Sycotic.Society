@@ -32,7 +32,7 @@ export default function NFTs() {
                         )
                     })
                 ) : (
-                    <p>No NFTs owned</p>
+                    <p>You Do Not Own Any NFTs!</p>
                 )
             )}
         </div>
