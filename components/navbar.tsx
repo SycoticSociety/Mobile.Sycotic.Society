@@ -13,7 +13,7 @@ export default function Navbar() {
             </Link>
             <Link href="/nfts" className={styles.navIcon}>
                 <Image src={"/nft-icon.png"} alt="" width={40} height={40}/>
-                <p className={styles.navIconLabel}>NFTs</p>
+                <p className={styles.navIconLabel}>NFT Collection</p>
             </Link>
             <div className={styles.navIcon}>
             {address && (
