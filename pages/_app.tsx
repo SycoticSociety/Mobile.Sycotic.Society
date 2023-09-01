@@ -27,15 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         metamaskWallet(),
         coinbaseWallet(),
         walletConnect(),
-        smartWallet({
-           factoryAddress: "0x10d901d313856913aC1cEA225BD5231012569473",
-           gasless: true,
-             personalWallets: [
-             metamaskWallet(),
-             coinbaseWallet(),
-             walletConnect(),
-          ],
-        }),
+          
             localWallet(),
             paperWallet({
            paperClientId: "5c6a293d-21bd-4c8b-bc08-f722ea5168a6",
