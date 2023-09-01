@@ -196,8 +196,8 @@
   align-items: center;
   justify-content: center;
   height: 80vh;
-  margin-bottom: 20px;
-  margin-top: 20px; /* Add this line to create a 20px margin at the top */
+  margin-bottom: 40px;
+  margin-top: 60px; /* Add this line to create a 20px margin at the top */
 }
 
 
