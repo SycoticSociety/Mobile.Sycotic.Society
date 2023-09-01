@@ -195,9 +195,11 @@
   padding: 2rem;
   align-items: center;
   justify-content: center;
-  height: 75vh;
-  margin-top: 60px;
+  height: 80vh;
+  margin-bottom: 20px;
+  margin-top: 20px; /* Add this line to create a 20px margin at the top */
 }
+
 
 .nftCardContent {
   display: flex;
