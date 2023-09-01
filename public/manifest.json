@@ -1,11 +1,12 @@
 {
-    "theme_color": "#070707",
-    "background_color": "#070707",
+    "theme_color": "#910415",
+    "background_color": "#000000",
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "TW PWA",
-    "short_name": "TW PWA",
+    "name": "Sycotic Society Mobile DApp",
+    "short_name": "Sycotic Mobile",
+    "description": "Sycotic Society mobile v1.0",
     "icons": [
         {
             "src": "/icon-192x192.png",
