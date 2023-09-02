@@ -11,6 +11,8 @@ import {
 } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import Navbar from "../components/navbar";
+import Header from "../components/Header";
+
 
 
 
