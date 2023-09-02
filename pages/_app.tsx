@@ -11,8 +11,8 @@ import {
 } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import Navbar from "../components/navbar";
-import Header from "../components/header";
-import iframeComponent from "../components/iframeComponent"; // Import the iframe component
+
+
 
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <ConnectWallet theme={"dark"} />
       <Navbar />
-      <iframeComponent /> {/* Use the iframeComponent here */}
+     
     </ThirdwebProvider>
   );
 }
