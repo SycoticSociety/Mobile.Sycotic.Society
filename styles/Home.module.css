@@ -252,7 +252,6 @@
   max-width: 600px; /* Adjust the maximum width as needed */
   height: 0;
   padding-bottom: 100%; /* Maintain a 1:1 aspect ratio (adjust as needed) */
-  overflow: hidden;
 }
 
 /* CSS for the iframe itself */
