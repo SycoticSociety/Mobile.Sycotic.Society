@@ -18,9 +18,32 @@ const Home: NextPage = () => {
   const { data: contractMetadata } = useContractMetadata(contract);
 
   return (
-   <div>
-      {/* Add your JSX content here */}
-     Hello world
+    <div className={styles.container}>
+      {address ? (
+        <div className={styles.nftClaim}>
+          <MediaRenderer
+            src={contractMetadata?.image}
+            width="auto"
+            height="60%"
+            style={{
+              borderRadius: "20px",
+              maxWidth: "500px",
+            }}
+          />
+          <h1>{contractMetadata?.name}</h1>
+          <Web3Button
+            contractAddress={NFT_CONTRACT_ADDRESS}
+            action={(contract) => contract.erc1155.claim(0, 1)}
+            onSuccess={() => alert("NFT Claimed!")}
+          >
+            Claim NFT
+          </Web3Button>
+        </div>
+      ) : (
+        <div className={styles.loginContainer}>
+          <ConnectWallet btnTitle="Login" />
+        </div>
+      )}
     </div>
   );
 };
