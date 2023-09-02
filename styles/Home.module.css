@@ -235,7 +235,7 @@
   width: 47%;
   height: 100%;
   border-radius: 20px;
-  background: rgba(7, 7, 7, 0.3); /* Set the last value (0.5) to 0 for fully transparent or 1 for fully opaque */
+  background: rgba(7, 7, 7, 0.05); /* Set the last value (0.5) to 0 for fully transparent or 1 for fully opaque */
   border: none;
   transition: transform 0.2s ease;
   position: relative;
