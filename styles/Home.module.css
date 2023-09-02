@@ -1,9 +1,12 @@
 .container {
-  width: 100%;
-  max-width: 1440px;
-  padding: 0 1rem;
-  margin: 0 auto;
+   width: 100%;
+   max-width: 1440px;
+   padding: 0 1rem;
+   margin: 0 auto;
+   background-image: url("/images/background Purple.gif");
+   /* Other container styles here */
 }
+
 
 .gradientText0 {
   background: -webkit-linear-gradient(#bfa3da, #84309c, #c735b0);
