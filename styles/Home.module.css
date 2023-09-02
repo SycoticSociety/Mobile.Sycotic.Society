@@ -163,9 +163,10 @@
   align-items: center;
   padding: 1rem;
   background: rgba(139, 0, 139, 0.6); /* 60% transparency */
-  margin-top: 5px; /* Move the header down by 20 pixels */
-  height: calc(20px + 2rem); /* Increase the height by 20 pixels */
+  margin-top: 10px; /* Move the header down by 20 pixels */
+  height: 20px; /* Increase the height by 20 pixels */
 }
+
 
 .navbar {
   display: flex;
