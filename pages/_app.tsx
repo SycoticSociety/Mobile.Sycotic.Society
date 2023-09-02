@@ -12,7 +12,6 @@ import {
 import "../styles/globals.css";
 import Navbar from "../components/navbar";
 import Header from "../components/header";
-import IframeComponent from "../components/IframeComponent"; // Import the IframeComponent
 
 const activeChain = "polygon";
 
@@ -32,9 +31,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       ]}
     >
       <Header />
-       <IframeComponent />
-      <Component {...pageProps} />
-      <ConnectWallet theme={"dark"} />
+        <Component {...pageProps} />
+        <ConnectWallet theme={"dark"} />
       <Navbar />
     
     </ThirdwebProvider>
