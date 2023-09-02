@@ -1,11 +1,16 @@
 .container {
-   width: 100%;
-   max-width: 1440px;
-   padding: 0 1rem;
-   margin: 0 auto;
-   background-image: url("/images/backgroundPurple.gif");
-   /* Other container styles here */
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+    height: 100vh;
+    background-image: url("path/to/images/folder/your-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Other container styles here */
+    max-width: 2600px; /* Increased max-width to 2600px */
 }
+
 
 
 .gradientText0 {
