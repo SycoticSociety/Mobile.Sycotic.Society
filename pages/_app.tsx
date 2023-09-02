@@ -12,7 +12,7 @@ import {
 import "../styles/globals.css";
 import Navbar from "../components/navbar";
 import Header from "../components/header";
-import iframeComponent from "./iframeComponent"; // Import the iframe component
+import iframeComponent from "../iframeComponent"; // Import the iframe component
 
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
