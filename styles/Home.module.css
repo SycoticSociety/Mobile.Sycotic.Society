@@ -163,7 +163,7 @@
   align-items: center;
   padding: 1rem;
   background: rgba(139, 0, 139, 0.6); /* 60% transparency */
-   
+  margin-top: 20px; /* Add this line to move the header down by 20 pixels */
 }
 
 .navbar {
