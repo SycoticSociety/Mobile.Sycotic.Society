@@ -172,7 +172,7 @@
   padding: 0.75rem 2rem;
   border-top: 1px solid #333;
   position: fixed;
-  bottom: 1px;
+  bottom: 0px;
   left: 0;
   right: 0;
   background: rgba(75, 0, 130, 1.0); /* 90% transparency */
