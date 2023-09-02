@@ -162,7 +162,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 1rem;
-  background: rgba(139, 0, 139, 0.9); /* 70% transparency */
+  background: rgba(139, 0, 139, 0.6); /* 60% transparency */
    
 }
 
