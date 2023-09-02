@@ -18,7 +18,10 @@ const Home: NextPage = () => {
   const { data: contractMetadata } = useContractMetadata(contract);
 
   return (
-   
+   <div>
+      {/* Add your JSX content here */}
+     Hello world
+    </div>
   );
 };
 
