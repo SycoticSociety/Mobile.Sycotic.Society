@@ -3,7 +3,7 @@
     padding: 0 1rem;
     margin: 0 auto;
     height: 100vh;
-    background-image: url("path/to/images/folder/your-image.jpg");
+    background-image: url("/images/backgroundPurple.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
