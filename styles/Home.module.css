@@ -163,8 +163,6 @@
   align-items: center;
   padding: 1rem;
   background: rgba(139, 0, 139, 0.6); /* 60% transparency */
-  margin-top: 10px; /* Move the header down by 20 pixels */
-  height: 20px; /* Increase the height by 20 pixels */
 }
 
 
