@@ -162,7 +162,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 1rem;
-  background: rgba(7, 7, 7, 0.4); /* 40% transparency */
+  background: rgba(7, 7, 7, 0.7); /* 70% transparency */
 }
 
 .navbar {
@@ -175,7 +175,7 @@
   bottom: 1px;
   left: 0;
   right: 0;
-  background: rgba(7, 7, 7, 0.4); /* 40% transparency */
+  background: rgba(7, 7, 7, 0.7); /* 70% transparency */
 }
 
 
