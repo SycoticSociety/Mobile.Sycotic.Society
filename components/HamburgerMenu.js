@@ -36,7 +36,7 @@ const HamburgerMenu = ({ photos }) => {
     width: "250px",
     backgroundColor: "#4B0082",
     padding: "20px",
-    border: "1px solid #ccc",
+    border: "1px solid 	#800080",
   };
 
   const imageStyles = {
