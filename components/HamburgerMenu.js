@@ -33,10 +33,10 @@ const HamburgerMenu = ({ photos }) => {
     position: "absolute",
     top: "40px",
     left: "0",
-    width: "250px",
+    width: "225px",
     backgroundColor: "#4B0082",
     padding: "20px",
-    border: "1px solid 	#800080",
+    border: "1px solid 	##9400D3",
   };
 
   const imageStyles = {
