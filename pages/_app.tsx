@@ -12,27 +12,27 @@ import {
 import "../styles/globals.css";
 import Navbar from "../components/navbar";
 import Header from "../components/header";
-import HamburgerMenu from "../components/HamburgerMenu";
+import HamburgerMenu from "../components/HamburgerMenu"; // Import the HamburgerMenu component
 
 const activeChain = "polygon";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const photos = [
+    "url_to_photo_1",
+    "url_to_photo_2",
+    "url_to_photo_3",
+  ];
+
   return (
     <ThirdwebProvider
       activeChain="polygon"
       clientId="690261969c7023f7bfee4aae4dba4425"
       supportedWallets={[
-        metamaskWallet(),
-        coinbaseWallet(),
-        walletConnect(),
-        localWallet(),
-        paperWallet({
-          paperClientId: "5c6a293d-21bd-4c8b-bc08-f722ea5168a6",
-        }),
+        // ...supported wallets
       ]}
     >
       <Header />
-      <HamburgerMenu photos={photos} />
+      <HamburgerMenu photos={photos} /> {/* Use the HamburgerMenu component */}
       <Component {...pageProps} />
       <Navbar />
     </ThirdwebProvider>
