@@ -256,3 +256,42 @@
   background-color: #8b008b !important; /* Lighter purple color on hover */
   transform: translateY(-2px); /* Add a slight upward lift on hover */
 }
+
+.hamburger-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 30px;
+  position: relative;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 3px 0;
+}
+
+.photo-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.photo-window img {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
