@@ -35,7 +35,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <Navbar />
     </ThirdwebProvider>
+    <div>
      <HamburgerMenu photos={photos} /> {/* Use the HamburgerMenu component */}
+   </div>
   );
 }
 
