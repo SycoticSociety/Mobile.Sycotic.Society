@@ -1,3 +1,4 @@
+// Home.tsx
 import {
   ConnectWallet,
   MediaRenderer,
@@ -31,17 +32,11 @@ const Home: NextPage = () => {
             }}
           />
           <h1>{contractMetadata?.name}</h1>
-          <Web3Button
-            contractAddress={NFT_CONTRACT_ADDRESS}
-            action={(contract) => contract.erc1155.claim(0, 1)}
-            onSuccess={() => alert("NFT Claimed!")}
-          >
-            Claim NFT
-          </Web3Button>
+          <ConnectWallet btnTitle="Login" className={styles.connectWalletButton} /> {/* Apply the CSS class here */}
         </div>
       ) : (
         <div className={styles.loginContainer}>
-          <ConnectWallet btnTitle="Login" />
+          <ConnectWallet btnTitle="Login" className={styles.connectWalletButton} /> {/* Apply the CSS class here */}
         </div>
       )}
     </div>
