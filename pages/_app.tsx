@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       ]}
     >
       <Header />
-      <HamburgerMenu /> {/* Add the HamburgerMenu component here */}
+      <HamburgerMenu photos={photos} />
       <Component {...pageProps} />
       <Navbar />
     </ThirdwebProvider>
