@@ -253,6 +253,6 @@
 }
 
 .connectWalletButton:hover {
-  background-color: #8A2BE2 !important; /* Lighter purple color on hover */
+  background-color: #9400D3 !important; /* Lighter purple color on hover */
   transform: translateY(-2px); /* Add a slight upward lift on hover */
 }
