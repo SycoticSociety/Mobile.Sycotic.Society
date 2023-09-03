@@ -14,7 +14,7 @@ export default function NFTCard({ nft, quantity }: NFTProps) {
         <div className={styles.nftCard}>
             <ThirdwebNftMedia
                 metadata={nft.metadata}
-                width="60%"
+                width="50%"
                 height="auto"
             />
             <div className={styles.nftCardContent}>
