@@ -13,7 +13,7 @@ const activeChain = "polygon";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const photos = [
-    "/immages/hamburger.png",
+    "/images/hamburger.png",
     "/images/hamburger2.png",
     "/images/hamburger3.png",
   ];
