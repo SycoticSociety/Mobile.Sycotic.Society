@@ -18,9 +18,9 @@ const activeChain = "polygon";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const photos = [
-    "url_to_photo_1",
-    "url_to_photo_2",
-    "url_to_photo_3",
+    "/images/hamburger.png",
+    "images/hamburger2.png",
+    "images/hamberger3.png",
   ];
 
   return (
