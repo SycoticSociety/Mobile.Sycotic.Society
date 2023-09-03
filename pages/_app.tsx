@@ -31,8 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       ]}
     >
       <Header />
-        <ConnectWallet theme={"dark"} />
-       
+          <Component {...pageProps} />
         <ConnectWallet theme={"dark"} />
       <Navbar />
     
