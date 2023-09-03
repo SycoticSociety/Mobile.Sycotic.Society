@@ -20,8 +20,8 @@ const HamburgerMenu = ({ photos }) => {
 
   const barStyles = {
     width: "30px",
-    height: "3px",
-    backgroundColor: "#000",
+    height: "4px",
+    backgroundColor: "#9400D3",
     margin: "3px 0",
   };
 
