@@ -24,10 +24,10 @@ const Home: NextPage = () => {
           <MediaRenderer
             src={contractMetadata?.image}
             width="auto"
-            height="60%"
+            height="50%"
             style={{
               borderRadius: "20px",
-              maxWidth: "500px",
+              maxWidth: "600px",
             }}
           />
           <h1>{contractMetadata?.name}</h1>
