@@ -1,4 +1,3 @@
-import React from "react";
 import type { AppProps } from "next/app";
 import {
   ThirdwebProvider,
@@ -12,32 +11,30 @@ import {
 import "../styles/globals.css";
 import Navbar from "../components/navbar";
 import Header from "../components/header";
-import HamburgerMenu from "../components/HamburgerMenu"; // Import the HamburgerMenu component
 
 const activeChain = "polygon";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const photos = [
-    "/images/hamburger.png",
-    "images/hamburger2.png",
-    "images/hamberger3.png",
-  ];
-
   return (
     <ThirdwebProvider
       activeChain="polygon"
       clientId="690261969c7023f7bfee4aae4dba4425"
       supportedWallets={[
-        // ...supported wallets
+        metamaskWallet(),
+        coinbaseWallet(),
+        walletConnect(),
+        localWallet(),
+        paperWallet({
+          paperClientId: "5c6a293d-21bd-4c8b-bc08-f722ea5168a6",
+        }),
       ]}
     >
       <Header />
-      <Component {...pageProps} />
+          <Component {...pageProps} />
+       
       <Navbar />
+    
     </ThirdwebProvider>
-    <div>
-     <HamburgerMenu photos={photos} /> {/* Use the HamburgerMenu component */}
-   </div>
   );
 }
 
