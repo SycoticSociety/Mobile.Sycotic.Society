@@ -214,6 +214,7 @@
 
 
 .nftCardContent {
+  text: white;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -224,7 +225,7 @@
   padding: 0.25rem 0.5rem;
 }
 .nftCardContent p {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(139, 0, 139, 0.4);
   border-radius: 10px;
   padding: 0.5rem;
   font-size: 0.5rem;
