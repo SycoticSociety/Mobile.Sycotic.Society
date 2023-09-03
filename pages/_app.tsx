@@ -7,7 +7,7 @@ import {
 import "../styles/globals.css";
 import Navbar from "../components/navbar";
 import Header from "../components/header";
-import HamburgerMenu from "../components/HamburgerMenu"; // Import the HamburgerMenu component
+import HamburgerMenu from "../components/HamburgerMenu";
 
 const activeChain = "polygon";
 
@@ -19,18 +19,20 @@ function MyApp({ Component, pageProps }: AppProps) {
   ];
 
   return (
-    <ThirdwebProvider
-      activeChain="polygon"
-      clientId="690261969c7023f7bfee4aae4dba4425"
-      supportedWallets={[
-        // ...supported wallets
-      ]}
-    >
-      <Header />
-      <HamburgerMenu photos={photos} /> {/* Use the HamburgerMenu component */}
-      <Component {...pageProps} />
-      <Navbar />
-    </ThirdwebProvider>
+    <>
+      <HamburgerMenu photos={photos} />
+      <ThirdwebProvider
+        activeChain={activeChain}
+        clientId="690261969c7023f7bfee4aae4dba4425"
+        supportedWallets={[
+          // ...supported wallets
+        ]}
+      >
+        <Header />
+        <Component {...pageProps} />
+        <Navbar />
+      </ThirdwebProvider>
+    </>
   );
 }
 
