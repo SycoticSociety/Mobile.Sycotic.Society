@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import './HamburgerMenu.css'; // You can create a CSS file for styling
 
 const HamburgerMenu = ({ photos }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,18 +7,60 @@ const HamburgerMenu = ({ photos }) => {
     setIsOpen(!isOpen);
   };
 
+  const menuStyles = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "40px",
+    height: "30px",
+    position: "relative",
+    cursor: "pointer",
+  };
+
+  const barStyles = {
+    width: "30px",
+    height: "3px",
+    backgroundColor: "#000",
+    margin: "3px 0",
+  };
+
+  const windowStyles = {
+    display: isOpen ? "flex" : "none",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "absolute",
+    top: "40px",
+    left: "0",
+    width: "100%",
+    backgroundColor: "#fff",
+    padding: "20px",
+    border: "1px solid #ccc",
+  };
+
+  const imageStyles = {
+    width: "100%",
+    maxWidth: "200px",
+    marginBottom: "10px",
+    cursor: "pointer",
+  };
+
   return (
-    <div className={`hamburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-      <div className="bar"></div>
-      <div className="bar"></div>
-      <div className="bar"></div>
-      {isOpen && (
-        <div className="photo-window">
-          {photos.map((photo, index) => (
-            <img key={index} src={photo} alt={`Photo ${index + 1}`} />
-          ))}
-        </div>
-      )}
+    <div style={menuStyles} onClick={toggleMenu}>
+      <div style={barStyles}></div>
+      <div style={barStyles}></div>
+      <div style={barStyles}></div>
+      <div style={windowStyles}>
+        {photos.map((photo, index) => (
+          <img
+            key={index}
+            src={photo}
+            alt={`Photo ${index + 1}`}
+            style={imageStyles}
+          />
+        ))}
+      </div>
     </div>
   );
 };
