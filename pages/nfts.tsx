@@ -19,7 +19,7 @@ export default function NFTs() {
         <div className={styles.container}>
             <h1>NFT Collection</h1>
             {ownedNFTsLoading ? (
-                <p>Loading...</p>
+                <p>You Must Log into your wallet...</p>
             ) : (
                 ownedNFTs && ownedNFTs.length > 0 ? (
                     ownedNFTs.map((nft) => {
