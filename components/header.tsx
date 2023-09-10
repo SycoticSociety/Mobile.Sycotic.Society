@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <div className={styles.header}>
             <Image src={"/images/Thirdweb-Icon-Circle-Black-08 1.gif"} alt="" height={60} width={60}/>
-            <p style={{ fontSize: 'larger' }}>**Sycotic Society Mobile**</p>
+            <p style={{ fontSize: 'larger' }}>** Sycotic Society Mobile **</p>
         </div>
     );
 };
