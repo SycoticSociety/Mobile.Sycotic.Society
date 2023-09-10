@@ -12,14 +12,11 @@ import styles from "../styles/Home.module.css";
 import { NextPage } from "next";
 
 const Home: NextPage = () => {
-
   return (
     <div className={styles.container}>
-    
-        <div className={styles.loginContainer}>
-          <ConnectWallet btnTitle="Login" className={styles.connectWalletButton} /> {/* Apply the CSS class here */}
-        </div>
-      )}
+      <div className={styles.loginContainer}>
+        <ConnectWallet btnTitle="Login" className={styles.connectWalletButton} />
+      </div>
     </div>
   );
 };
