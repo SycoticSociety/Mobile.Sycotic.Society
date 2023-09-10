@@ -5,6 +5,7 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  margin-left: 10px;
   background-image: url("/images/backgroundPurple.gif");
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,6 +17,7 @@
   width: 100%;
   padding: 0 1rem;
   margin: 0 auto;
+  margin-left: 10px;
   min-height: 100vh; /* Set min-height to ensure full page coverage */
   background-image: url("/images/backgroundPurple.gif");
   background-size: cover;
