@@ -8,7 +8,7 @@ export default function Navbar() {
     return (
         <div className={styles.navbar}>
             <Link href="/page" className={styles.navIcon}>
-                <Image src={"/cronos-icon.png"} alt="" width={46} height={46}/>
+                <Image src={"/cronos-icon.png"} alt="" width={35} height={43}/>
                 <p className={styles.navIconLabel}>Cronos</p>
             </Link>
 
