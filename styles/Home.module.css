@@ -163,7 +163,7 @@
   align-items: center;
   padding: 1rem;
   background: rgba(75, 0, 130, 1.0); /* 90% transparency */
-  color: black; /* Add this line to set text color to black */
+  color: white; /* Add this line to set text color to black */
 }
 
 
