@@ -7,8 +7,9 @@
   min-height: 100vh;
   background-image: url("/images/backgroundPurple.gif");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: 100% 100%; /* Change background-size to cover the entire element */
+  background-position: center center;
    max-width: 2600px; /* Increased max-width to 2600px */
 }
 
