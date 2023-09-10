@@ -9,6 +9,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+   max-width: 2600px; /* Increased max-width to 2600px */
 }
 
 .description {
