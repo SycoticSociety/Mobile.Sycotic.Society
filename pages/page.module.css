@@ -12,6 +12,18 @@
    max-width: 2600px; /* Increased max-width to 2600px */
 }
 
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  min-height: 100vh; /* Set min-height to ensure full page coverage */
+  background-image: url("/images/backgroundPurple.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 2600px; /* Increased max-width to 2600px */
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
