@@ -43,9 +43,9 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            FREE🪙COIN<span></span>
+           
           </h2>
-          <p>Official digital asset of Sycotic💢Society</p>
+          <p></p>
         </a>
 
         <a
